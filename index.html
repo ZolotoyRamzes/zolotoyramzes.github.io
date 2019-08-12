@@ -76,8 +76,8 @@
     }
     function render(response) {
         let html = '';
-        for(let i=1; i<response.items.length;i++){
-            let f = response[i];
+        for(let i=0; i<response.items.length;i++){
+            let f = response.items[i];
             html += "<div class=\"card col-sm\">" +
                 "<img class=\"card-img-top\" src=\""+f.photo_200+"\">" +
                 "<div class=\"card-body\">" +
